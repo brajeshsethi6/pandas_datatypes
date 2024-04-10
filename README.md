@@ -15,7 +15,7 @@ A Python function for inferring data types of columns in a pandas DataFrame.
 
 ```python
 import pandas as pd
-from infer_data_types import infer_data_types
+import pandas_datatypes 
 
 # Create a DataFrame
 data = {
@@ -27,7 +27,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Infer data types
-data_types = infer_data_types(df)
+data_types = pandas_datatypes.infer_data_types(df)
 
 print(data_types)
 ```
