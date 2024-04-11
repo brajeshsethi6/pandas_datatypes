@@ -20,8 +20,8 @@ def infer_data_types(df: pd.DataFrame, fill_numeric_zeros: bool = True) -> dict:
                 if (col % 1 == 0).all():
                     return col.astype(int)
         return col
-
-    temp_df = df.apply(fill_zeros)
+    temp_df = df.copy()
+    temp_df = temp_df.apply(fill_zeros)
 
     for column in df.columns:
         if not pd.api.types.is_any_real_numeric_dtype(temp_df[column]):

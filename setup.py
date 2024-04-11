@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="pandas_datatypes",
-    version="0.1.2",
+    version="1.1.2",
     author="Brajesh",
     description="A library for getting correct datatype from pandas DataFrame",
     long_description=long_description,
